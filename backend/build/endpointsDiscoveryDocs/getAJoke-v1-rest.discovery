@@ -8,8 +8,8 @@
    }
   }
  },
- "basePath": "/_ah/api/myApi/v1/sayHi/",
- "baseUrl": "https://myApplicationId.appspot.com/_ah/api/myApi/v1/sayHi/",
+ "basePath": "/_ah/api/getAJoke/v1/",
+ "baseUrl": "https://myApplicationId.appspot.com/_ah/api/getAJoke/v1/",
  "batchPath": "batch",
  "description": "This is an API",
  "discoveryVersion": "v1",
@@ -17,23 +17,13 @@
   "x16": "http://www.google.com/images/icons/product/search-16.gif",
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
- "id": "myApi:v1",
+ "id": "getAJoke:v1",
  "kind": "discovery#restDescription",
  "methods": {
-  "sayHi": {
-   "httpMethod": "POST",
-   "id": "myApi.sayHi",
-   "parameterOrder": [
-    "name"
-   ],
-   "parameters": {
-    "name": {
-     "location": "path",
-     "required": true,
-     "type": "string"
-    }
-   },
-   "path": "{name}",
+  "getAJoke": {
+   "httpMethod": "GET",
+   "id": "getAJoke.getAJoke",
+   "path": "mybean",
    "response": {
     "$ref": "MyBean"
    },
@@ -42,7 +32,7 @@
    ]
   }
  },
- "name": "myApi",
+ "name": "getAJoke",
  "ownerDomain": "backend.builditbigger.gradle.udacity.com",
  "ownerName": "backend.builditbigger.gradle.udacity.com",
  "parameters": {
@@ -98,11 +88,14 @@
    "properties": {
     "data": {
      "type": "string"
+    },
+    "joke": {
+     "type": "string"
     }
    },
    "type": "object"
   }
  },
- "servicePath": "myApi/v1/sayHi/",
+ "servicePath": "getAJoke/v1/",
  "version": "v1"
 }

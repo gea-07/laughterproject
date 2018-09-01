@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/androidjokelibrary/androidjokelibrary.iml" filepath="$PROJECT_DIR$/androidjokelibrary/androidjokelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jokerlib/jokerlib.iml" filepath="$PROJECT_DIR$/jokerlib/jokerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javajokelibrary/javajokelibrary.iml" filepath="$PROJECT_DIR$/javajokelibrary/javajokelibrary.iml" />
     </modules>
   </component>
 </project>
