@@ -58,9 +58,12 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
             return;
         }
         mJokeStr = result;
-        Toast.makeText(context, result, Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(context, JokeActivity.class);
-        intent.putExtra(JokeActivity.JOKE_ID, result);
-        context.startActivity(intent);
+
+        if (context != null) {
+            Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(context, JokeActivity.class);
+            intent.putExtra(JokeActivity.JOKE_ID, result);
+            context.startActivity(intent);
+        }
     }
 }

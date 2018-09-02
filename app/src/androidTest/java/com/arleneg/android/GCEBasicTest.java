@@ -1,5 +1,6 @@
 package com.arleneg.android;
 
+import android.content.Context;
 import android.support.test.espresso.ViewAssertion;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
@@ -30,7 +31,7 @@ public class GCEBasicTest {
     @Test
     public void checkAsyncTaskReturnsJoke() throws ExecutionException, InterruptedException {
         EndpointsAsyncTask task = new EndpointsAsyncTask();
-        String result = task.get();
+        String result = task.execute((Context)null).get();
         assert (result != null);
     }
 

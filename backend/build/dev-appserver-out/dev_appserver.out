@@ -1,21 +1,21 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-Sep 01, 2018 11:00:34 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
-INFO: Overwriting system property key 'java.util.logging.config.file', value '/usr/local/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
-Sep 01, 2018 11:00:34 AM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 02, 2018 12:09:33 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value '/usr/local/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/LaughterProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
+Sep 02, 2018 12:09:33 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-Sep 01, 2018 5:00:34 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-WARNING: Your working directory, (/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/FinalProject/backend) is not equal to your 
-web application root (/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/FinalProject/backend/build/exploded-backend)
+Sep 02, 2018 6:09:33 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/LaughterProject/backend) is not equal to your 
+web application root (/Users/arlene/AndroidStudioProjects/AndroidNanoDegree/LaughterProject/backend/build/exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-Sep 01, 2018 5:00:35 PM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 02, 2018 6:09:33 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-Sep 01, 2018 5:00:35 PM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 02, 2018 6:09:34 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@localhost:8080
-Sep 01, 2018 5:00:35 PM com.google.appengine.tools.development.AbstractModule startup
+Sep 02, 2018 6:09:34 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Sep 01, 2018 5:00:35 PM com.google.appengine.tools.development.AbstractModule startup
+Sep 02, 2018 6:09:34 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Sep 01, 2018 11:00:35 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+Sep 02, 2018 12:09:34 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
