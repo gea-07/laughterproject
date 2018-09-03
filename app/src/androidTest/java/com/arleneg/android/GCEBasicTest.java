@@ -21,6 +21,8 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertFalse;
 import static org.hamcrest.CoreMatchers.not;
 
 @RunWith(AndroidJUnit4.class)
@@ -32,7 +34,9 @@ public class GCEBasicTest {
     public void checkAsyncTaskReturnsJoke() throws ExecutionException, InterruptedException {
         EndpointsAsyncTask task = new EndpointsAsyncTask();
         String result = task.execute((Context)null).get();
-        assert (result != null);
+
+        String gceErrorStr = "GCE IO Exception";
+        assertFalse(result.equals(gceErrorStr));
     }
 
     @Test
