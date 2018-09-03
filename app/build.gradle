@@ -43,6 +43,11 @@ android {
             applicationId 'com.udacity.gradle.builditbigger.flavorspecificactivity.paid'
         }
     }
+    sourceSets {
+        paid {
+            manifest.srcFile 'src/paid/AndroidManifest.xml'
+        }
+    }
 }
 
 dependencies {
@@ -54,8 +59,8 @@ dependencies {
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
 
-    implementation project (':javajokelibrary')
-    implementation project (':androidjokelibrary')
+    implementation project(':javajokelibrary')
+    implementation project(':androidjokelibrary')
 
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'

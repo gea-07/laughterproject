@@ -1,17 +1,14 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v4.util.Pair;
-import android.widget.Toast;
 
-import com.arleneg.android.androidjokelibrary.JokeActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.udacity.gradle.builditbigger.backend.getAJoke.GetAJoke;
+import com.udacity.gradle.builditbigger.flavorspecificactivity.MainActivity;
 
 import java.io.IOException;
 
@@ -60,10 +57,7 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         mJokeStr = result;
 
         if (context != null) {
-            Toast.makeText(context, result, Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(context, JokeActivity.class);
-            intent.putExtra(JokeActivity.JOKE_ID, result);
-            context.startActivity(intent);
+            ((MainActivity)context).showJoke(mJokeStr);
         }
     }
 }

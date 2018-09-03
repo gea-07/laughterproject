@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.flavorspecificactivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
+import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
 import com.udacity.gradle.builditbigger.backend.getAJoke.GetAJoke;
 
 import java.io.IOException;
@@ -65,5 +66,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
         loadJokeData();
+    }
+
+    public void showJoke(String joke) {
+//        Toast.makeText(this, joke, Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, JokeActivity.class);
+        intent.putExtra(JokeActivity.JOKE_ID, joke);
+        this.startActivity(intent);
     }
 }
