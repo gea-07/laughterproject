@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void showJoke(String joke) {
         Toast.makeText(this, joke, Toast.LENGTH_LONG).show();
-//        Intent intent = new Intent(this, JokeActivity.class);
-//        intent.putExtra(JokeActivity.JOKE_ID, joke);
-//        this.startActivity(intent);
+        Intent intent = new Intent(this, JokeActivity.class);
+        intent.putExtra(JokeActivity.JOKE_ID, joke);
+        this.startActivity(intent);
     }
 }
