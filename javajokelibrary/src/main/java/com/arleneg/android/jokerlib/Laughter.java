@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Laughter {
     
-    ArrayList<String> mLaughterList = new ArrayList<String>();
+    ArrayList<String> mLaughterList = new ArrayList<>();
 
     public Laughter() {
         // Joke excerpts taken from National Geographics Kids Just Joking 6 book

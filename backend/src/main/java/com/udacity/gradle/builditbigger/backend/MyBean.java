@@ -18,7 +18,7 @@ public class MyBean {
 
     public void setJoke() {
         Laughter joke = new Laughter();
-        mJokeStr = joke != null ? joke.getALaugh() : "";
+        mJokeStr = (joke != null) ? joke.getALaugh() : "";
     }
     public String getJoke() {
         return mJokeStr;

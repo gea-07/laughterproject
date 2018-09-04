@@ -23,7 +23,7 @@ public class JokeActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_joke, container, false);
 
-        mJokeTextView = (TextView) view.findViewById(R.id.joke_textview);
+        mJokeTextView = view.findViewById(R.id.joke_textview);
         return view;
 
     }
